@@ -1,6 +1,8 @@
-runtime: nodejs12
-api_version: 1
+runtime: nodejs10
 
 handlers:
+- url: /static
+  static_dir: static
+
 - url: /.*
   script: server.js
